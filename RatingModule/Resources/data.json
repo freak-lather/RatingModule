@@ -1,0 +1,274 @@
+{
+   "httpStatus":201,
+   "response":{
+      "message":"Mock dashboard retrieved.",
+      "data":{
+         "analytics":{
+            "job":{
+               "description":"Jobs Description",
+               "items":[
+                  {
+                     "description":"Total Jobs Description",
+                     "growth":-19,
+                     "title":"Total Jobs",
+                     "total":24
+                  },
+                  {
+                     "avg":"2:47:21",
+                     "description":"Description m/j",
+                     "growth":-64,
+                     "title":"Average Jobs Time"
+                  },
+                  {
+                     "avg":"1:18:29",
+                     "description":"Description",
+                     "growth":-84,
+                     "title":"Average Jobs Time En-Route"
+                  },
+                  {
+                     "avg":"1:43:44",
+                     "description":"Description",
+                     "growth":33,
+                     "title":"Average Jobs Time On-Site"
+                  }
+               ],
+               "title":"Jobs"
+            },
+            "lineCharts":[
+               [
+                  {
+                     "chartType":"LINE",
+                     "description":"Total jobs and Services",
+                     "items":[
+                        {
+                           "key":"2020-01-20",
+                           "value":[
+                              {
+                                 "key":"jobs",
+                                 "value":15
+                              },
+                              {
+                                 "key":"services",
+                                 "value":16
+                              }
+                           ]
+                        },
+                        {
+                           "key":"2020-01-21",
+                           "value":[
+                              {
+                                 "key":"jobs",
+                                 "value":12
+                              },
+                              {
+                                 "key":"services",
+                                 "value":15
+                              }
+                           ]
+                        },
+                        {
+                           "key":"2020-01-22",
+                           "value":[
+                              {
+                                 "key":"jobs",
+                                 "value":26
+                              },
+                              {
+                                 "key":"services",
+                                 "value":27
+                              }
+                           ]
+                        },
+                        {
+                           "key":"2020-01-23",
+                           "value":[
+                              {
+                                 "key":"jobs",
+                                 "value":17
+                              },
+                              {
+                                 "key":"services",
+                                 "value":20
+                              }
+                           ]
+                        },
+                        {
+                           "key":"2020-01-24",
+                           "value":[
+                              {
+                                 "key":"jobs",
+                                 "value":5
+                              },
+                              {
+                                 "key":"services",
+                                 "value":6
+                              }
+                           ]
+                        },
+                        {
+                           "key":"2020-01-25",
+                           "value":[
+                              {
+                                 "key":"jobs",
+                                 "value":4
+                              },
+                              {
+                                 "key":"services",
+                                 "value":8
+                              }
+                           ]
+                        },
+                        {
+                           "key":"2020-01-26",
+                           "value":[
+                              {
+                                 "key":"jobs",
+                                 "value":15
+                              },
+                              {
+                                 "key":"services",
+                                 "value":20
+                              }
+                           ]
+                        },
+                        {
+                           "key":"2020-01-27",
+                           "value":[
+                              {
+                                 "key":"jobs",
+                                 "value":8
+                              },
+                              {
+                                 "key":"services",
+                                 "value":15
+                              }
+                           ]
+                        },
+                        {
+                           "key":"2020-01-28",
+                           "value":[
+                              {
+                                 "key":"jobs",
+                                 "value":23
+                              },
+                              {
+                                 "key":"services",
+                                 "value":27
+                              }
+                           ]
+                        },
+                        {
+                           "key":"2020-01-29",
+                           "value":[
+                              {
+                                 "key":"jobs",
+                                 "value":21
+                              },
+                              {
+                                 "key":"services",
+                                 "value":23
+                              }
+                           ]
+                        }
+                     ],
+                     "title":"Jobs and Services"
+                  }
+               ]
+            ],
+            "pieCharts":[
+               {
+                  "chartType":"PIE",
+                  "description":"Services by type",
+                  "items":[
+                     {
+                        "key":"Labour",
+                        "value":31.25
+                     },
+                     {
+                        "key":"Product",
+                        "value":68.75
+                     }
+                  ],
+                  "title":"Services"
+               },
+               {
+                  "chartType":"PIE",
+                  "description":"Services Labour by type",
+                  "items":[
+                     {
+                        "key":"POST_WARRANTY_SERVICE",
+                        "value":29
+                     },
+                     {
+                        "key":"MOBILE_SERVICE",
+                        "value":22
+                     },
+                     {
+                        "key":"WARRANTY_SERVICE",
+                        "value":49
+                     }
+                  ],
+                  "title":"Services Labour"
+               },
+               {
+                  "chartType":"PIE",
+                  "description":"Services Product by type",
+                  "items":[
+                     {
+                        "key":"TYRE",
+                        "value":10.7
+                     },
+                     {
+                        "key":"BATTERY",
+                        "value":89.3
+                     }
+                  ],
+                  "title":"Services Product"
+               }
+            ],
+            "rating":{
+               "avg":1,
+               "description":"Rating Description",
+               "items":{
+                  "1":14,
+                  "2":12,
+                  "3":11,
+                  "4":7,
+                  "5":14
+               },
+               "title":"Rating"
+            },
+            "service":{
+               "description":"Services Description",
+               "items":[
+                  {
+                     "description":"Total Services Description",
+                     "growth":68,
+                     "title":"Total Services",
+                     "total":60
+                  },
+                  {
+                     "description":"Total Labour Services Description",
+                     "growth":-59,
+                     "title":"Total Labour Services",
+                     "total":31
+                  },
+                  {
+                     "avg":"2:43:50",
+                     "description":"Description m/j",
+                     "growth":93,
+                     "title":"Average Services Time"
+                  },
+                  {
+                     "description":"Total Product Services Description",
+                     "growth":60,
+                     "title":"Total Product Services",
+                     "total":8
+                  }
+               ],
+               "title":"Services"
+            }
+         }
+      }
+   }
+}
