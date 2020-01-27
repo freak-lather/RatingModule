@@ -11,15 +11,15 @@ class RatingsViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.reload = { [unowned self] in
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         viewModel.willRefreshScreenData()
-        viewModel.reload = { [weak self] in
-            DispatchQueue.main.async {
-                self?.tableView.reloadData()
-            }
-        }
     }
 }
 

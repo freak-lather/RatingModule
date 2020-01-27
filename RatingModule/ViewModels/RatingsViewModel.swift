@@ -45,8 +45,8 @@ extension RatingsListViewModel: RatingListViewModelProtocol {
                 if let ratings = analytics.rating {
                     self?.ratingsDetails = ratings
                 }
-                self?.reload()
             }
+            self?.reload()
         }
     }
     
