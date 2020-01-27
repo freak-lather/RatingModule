@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		4746089C23DE897C00320E5D /* PieChartItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4746089B23DE897C00320E5D /* PieChartItemDetail.swift */; };
 		4746089E23DE8A6900320E5D /* PieChartItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4746089D23DE8A6900320E5D /* PieChartItems.swift */; };
+		474608A223DE908A00320E5D /* RatingApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474608A123DE908A00320E5D /* RatingApi.swift */; };
+		474608A823DE913A00320E5D /* URLParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474608A523DE913A00320E5D /* URLParameterEncoding.swift */; };
+		474608A923DE913A00320E5D /* JSONParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474608A623DE913A00320E5D /* JSONParameterEncoder.swift */; };
+		474608AA23DE913A00320E5D /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474608A723DE913A00320E5D /* ParameterEncoding.swift */; };
+		474608B023DE915000320E5D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474608AB23DE914F00320E5D /* Router.swift */; };
+		474608B123DE915000320E5D /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474608AC23DE914F00320E5D /* HTTPTask.swift */; };
+		474608B223DE915000320E5D /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474608AD23DE914F00320E5D /* EndPointType.swift */; };
+		474608B323DE915000320E5D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474608AE23DE915000320E5D /* HTTPMethod.swift */; };
+		474608B423DE915000320E5D /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474608AF23DE915000320E5D /* NetworkLogger.swift */; };
+		474608B723DE917900320E5D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474608B623DE917900320E5D /* NetworkManager.swift */; };
 		47D0022123DD5AF1003A081E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0022023DD5AF1003A081E /* AppDelegate.swift */; };
 		47D0022323DD5AF1003A081E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0022223DD5AF1003A081E /* SceneDelegate.swift */; };
 		47D0022523DD5AF1003A081E /* RatingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0022423DD5AF1003A081E /* RatingsViewController.swift */; };
@@ -57,6 +67,16 @@
 /* Begin PBXFileReference section */
 		4746089B23DE897C00320E5D /* PieChartItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartItemDetail.swift; sourceTree = "<group>"; };
 		4746089D23DE8A6900320E5D /* PieChartItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartItems.swift; sourceTree = "<group>"; };
+		474608A123DE908A00320E5D /* RatingApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingApi.swift; sourceTree = "<group>"; };
+		474608A523DE913A00320E5D /* URLParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLParameterEncoding.swift; sourceTree = "<group>"; };
+		474608A623DE913A00320E5D /* JSONParameterEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoder.swift; sourceTree = "<group>"; };
+		474608A723DE913A00320E5D /* ParameterEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		474608AB23DE914F00320E5D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		474608AC23DE914F00320E5D /* HTTPTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		474608AD23DE914F00320E5D /* EndPointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		474608AE23DE915000320E5D /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		474608AF23DE915000320E5D /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
+		474608B623DE917900320E5D /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		47D0021D23DD5AF0003A081E /* RatingModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RatingModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D0022023DD5AF1003A081E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47D0022223DD5AF1003A081E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +136,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4746089F23DE8FAC00320E5D /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				474608A023DE906900320E5D /* EndPoint */,
+				474608A323DE909B00320E5D /* Encoding */,
+				474608A423DE90B100320E5D /* Service */,
+				474608B523DE915A00320E5D /* Manager */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		474608A023DE906900320E5D /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				474608A123DE908A00320E5D /* RatingApi.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		474608A323DE909B00320E5D /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				474608A623DE913A00320E5D /* JSONParameterEncoder.swift */,
+				474608A723DE913A00320E5D /* ParameterEncoding.swift */,
+				474608A523DE913A00320E5D /* URLParameterEncoding.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		474608A423DE90B100320E5D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				474608AD23DE914F00320E5D /* EndPointType.swift */,
+				474608AE23DE915000320E5D /* HTTPMethod.swift */,
+				474608AC23DE914F00320E5D /* HTTPTask.swift */,
+				474608AF23DE915000320E5D /* NetworkLogger.swift */,
+				474608AB23DE914F00320E5D /* Router.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		474608B523DE915A00320E5D /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				474608B623DE917900320E5D /* NetworkManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
 		47D0021423DD5AF0003A081E = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +208,7 @@
 		47D0021F23DD5AF0003A081E /* RatingModule */ = {
 			isa = PBXGroup;
 			children = (
+				4746089F23DE8FAC00320E5D /* Network Layer */,
 				47D0025223DD6517003A081E /* Adaptors */,
 				47D0025023DD64F5003A081E /* Application */,
 				47D0025123DD650B003A081E /* General */,
@@ -488,11 +558,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				474608B123DE915000320E5D /* HTTPTask.swift in Sources */,
 				47D0029123DD7EC5003A081E /* ChartsItemDetail.swift in Sources */,
 				47D0022523DD5AF1003A081E /* RatingsViewController.swift in Sources */,
 				47D0028223DD73EE003A081E /* AnalyticsModel.swift in Sources */,
 				47D0025B23DD6615003A081E /* MockResponseCodable.swift in Sources */,
+				474608B023DE915000320E5D /* Router.swift in Sources */,
+				474608A223DE908A00320E5D /* RatingApi.swift in Sources */,
 				47D0025D23DD6635003A081E /* AppConstant.swift in Sources */,
+				474608B323DE915000320E5D /* HTTPMethod.swift in Sources */,
 				47D0027A23DD6F68003A081E /* RatingsViewModel.swift in Sources */,
 				47D0028423DD7704003A081E /* Job.swift in Sources */,
 				4746089C23DE897C00320E5D /* PieChartItemDetail.swift in Sources */,
@@ -501,10 +575,16 @@
 				47D0028823DD7A3A003A081E /* AnalyticalRating.swift in Sources */,
 				47D0022123DD5AF1003A081E /* AppDelegate.swift in Sources */,
 				47D0027023DD6E64003A081E /* DisplayRatingDetail.swift in Sources */,
+				474608B223DE915000320E5D /* EndPointType.swift in Sources */,
 				47D0025623DD6576003A081E /* RatingRespository.swift in Sources */,
+				474608A923DE913A00320E5D /* JSONParameterEncoder.swift in Sources */,
+				474608B723DE917900320E5D /* NetworkManager.swift in Sources */,
 				47D0027C23DD6FBC003A081E /* RatingsResponse.swift in Sources */,
+				474608A823DE913A00320E5D /* URLParameterEncoding.swift in Sources */,
 				47D0022323DD5AF1003A081E /* SceneDelegate.swift in Sources */,
+				474608B423DE915000320E5D /* NetworkLogger.swift in Sources */,
 				47D0029323DD7F3F003A081E /* Value.swift in Sources */,
+				474608AA23DE913A00320E5D /* ParameterEncoding.swift in Sources */,
 				47D0028623DD77B9003A081E /* JobItem.swift in Sources */,
 				47D0027E23DD7203003A081E /* ResponseModel.swift in Sources */,
 				47D0028A23DD7B30003A081E /* AnalyticalRatingItem.swift in Sources */,

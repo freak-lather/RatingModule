@@ -8,7 +8,7 @@
 
 import Foundation
 protocol DisplayRatingDetailProtocol {
-    func fetchDetails(_ handler:@escaping (RatingsResponse?, String?)-> Void)->Void
+    func fetchDetails(query: String, handler:@escaping (RatingsResponse?, String?)-> Void)->Void
 }
 
 struct DisplayRatingDetail {
@@ -19,8 +19,8 @@ struct DisplayRatingDetail {
 }
 
 extension DisplayRatingDetail: DisplayRatingDetailProtocol {
-    func fetchDetails(_ handler:@escaping (RatingsResponse?, String?)-> Void) -> Void {
-        repository.getRatingsDetails { response, message in
+    func fetchDetails(query: String, handler:@escaping (RatingsResponse?, String?)-> Void) -> Void {
+        repository.getRatingsDetails(query: query) { response, message in
             handler(response, message)
         }
     }

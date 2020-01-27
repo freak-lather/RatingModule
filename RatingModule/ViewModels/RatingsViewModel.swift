@@ -14,6 +14,7 @@ protocol RatingListViewModelProtocol {
 
 class RatingsListViewModel {
     var response: RatingsResponse?
+    var queryType: QueryType = .LAST_7_DAYS
     var reload: (()-> Void) = {}
     private var interactor: DisplayRatingDetailProtocol
     
@@ -30,7 +31,7 @@ extension RatingsListViewModel: RatingListViewModelProtocol {
     }
     
     func didLoad() {
-        self.interactor.fetchDetails { (response, message) in
+        self.interactor.fetchDetails(query: self.queryType.type) { (response, message) in
             print(response)
             self.reload()
         }

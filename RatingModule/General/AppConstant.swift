@@ -34,4 +34,7 @@ struct AppConstant {
         static let  failureNoRecordsFound = "no rating details found"
         static let unknown = "Unknown error, Try again later"
     }
+    struct MockData {
+        static let isEnable: Bool = false
+    }
 }
