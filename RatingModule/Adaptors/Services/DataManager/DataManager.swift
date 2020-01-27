@@ -1,6 +1,7 @@
 import Foundation
 class DataManager {
     static let sharedInstance = DataManager()
+    var ratingResponse: RatingsResponse?
     func requetRatingData(_ query: String)-> RatingsResponse? {
         if AppConstant.MockData.isEnable {
             if let response: RatingsResponse = RatingsResponse.getObjectFromJSONFile(fileName: AppConstant.Copy.jsonFileName, forKey: nil, fileType: AppConstant.Copy.fileType) {
@@ -10,9 +11,8 @@ class DataManager {
            
         } else {
             let networkManager = NetworkManager()
-            var ratingResponse: RatingsResponse?
-            networkManager.getRatings(query: query, completion: { (response, error) in
-                ratingResponse = response
+            networkManager.getRatings(query: query, completion: { [weak self] (response, error) in
+                self?.ratingResponse = response
             })
             return ratingResponse
         }

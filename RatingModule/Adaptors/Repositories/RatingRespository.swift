@@ -13,10 +13,13 @@ protocol RatingsRepositoryProtocol {
 
 struct RatingsRepository: RatingsRepositoryProtocol {
     func getRatingsDetails(query: String, handler:@escaping (RatingsResponse?, String?)-> Void) -> Void {
-        if let response = DataManager.sharedInstance.requetRatingData(query) {
-            handler(response, AppConstant.ResponseMessage.getSuccess)
-        } else {
+        let networkManager = NetworkManager()
+        networkManager.getRatings(query: query, completion: { (response, error) in
+            if let response = response {
+               handler(response, AppConstant.ResponseMessage.getSuccess)
+               return
+            }
             handler(nil, AppConstant.ResponseMessage.failureNoRecordsFound)
-        }
+        })
     }
 }

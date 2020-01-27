@@ -19,6 +19,13 @@
 		474608B323DE915000320E5D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474608AE23DE915000320E5D /* HTTPMethod.swift */; };
 		474608B423DE915000320E5D /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474608AF23DE915000320E5D /* NetworkLogger.swift */; };
 		474608B723DE917900320E5D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474608B623DE917900320E5D /* NetworkManager.swift */; };
+		47C5771223DEC51000F01E36 /* HeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5771023DEC51000F01E36 /* HeaderCell.swift */; };
+		47C5771323DEC51000F01E36 /* HeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47C5771123DEC51000F01E36 /* HeaderCell.xib */; };
+		47C5771623DEC64000F01E36 /* RatingDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5771423DEC64000F01E36 /* RatingDescriptionCell.swift */; };
+		47C5771723DEC64000F01E36 /* RatingDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47C5771523DEC64000F01E36 /* RatingDescriptionCell.xib */; };
+		47C5771A23DED09000F01E36 /* CommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5771823DED08F00F01E36 /* CommonCell.swift */; };
+		47C5771B23DED09000F01E36 /* CommonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47C5771923DED09000F01E36 /* CommonCell.xib */; };
+		47C5771D23DED2F700F01E36 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C5771C23DED2F700F01E36 /* UITableViewCell+Extension.swift */; };
 		47D0022123DD5AF1003A081E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0022023DD5AF1003A081E /* AppDelegate.swift */; };
 		47D0022323DD5AF1003A081E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0022223DD5AF1003A081E /* SceneDelegate.swift */; };
 		47D0022523DD5AF1003A081E /* RatingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0022423DD5AF1003A081E /* RatingsViewController.swift */; };
@@ -77,6 +84,13 @@
 		474608AE23DE915000320E5D /* HTTPMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		474608AF23DE915000320E5D /* NetworkLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLogger.swift; sourceTree = "<group>"; };
 		474608B623DE917900320E5D /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		47C5771023DEC51000F01E36 /* HeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCell.swift; sourceTree = "<group>"; };
+		47C5771123DEC51000F01E36 /* HeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderCell.xib; sourceTree = "<group>"; };
+		47C5771423DEC64000F01E36 /* RatingDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingDescriptionCell.swift; sourceTree = "<group>"; };
+		47C5771523DEC64000F01E36 /* RatingDescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingDescriptionCell.xib; sourceTree = "<group>"; };
+		47C5771823DED08F00F01E36 /* CommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCell.swift; sourceTree = "<group>"; };
+		47C5771923DED09000F01E36 /* CommonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonCell.xib; sourceTree = "<group>"; };
+		47C5771C23DED2F700F01E36 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		47D0021D23DD5AF0003A081E /* RatingModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RatingModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D0022023DD5AF1003A081E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47D0022223DD5AF1003A081E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +197,20 @@
 				474608B623DE917900320E5D /* NetworkManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		47C5770F23DEC4E000F01E36 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				47C5771023DEC51000F01E36 /* HeaderCell.swift */,
+				47C5771123DEC51000F01E36 /* HeaderCell.xib */,
+				47C5771423DEC64000F01E36 /* RatingDescriptionCell.swift */,
+				47C5771523DEC64000F01E36 /* RatingDescriptionCell.xib */,
+				47C5771823DED08F00F01E36 /* CommonCell.swift */,
+				47C5771923DED09000F01E36 /* CommonCell.xib */,
+				47C5771C23DED2F700F01E36 /* UITableViewCell+Extension.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		47D0021423DD5AF0003A081E = {
@@ -344,6 +372,7 @@
 		47D0027323DD6EAD003A081E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				47C5770F23DEC4E000F01E36 /* Cells */,
 				47D0022623DD5AF1003A081E /* Main.storyboard */,
 				47D0022423DD5AF1003A081E /* RatingsViewController.swift */,
 			);
@@ -530,10 +559,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47C5771323DEC51000F01E36 /* HeaderCell.xib in Resources */,
 				47D0022D23DD5AF2003A081E /* LaunchScreen.storyboard in Resources */,
 				47D0026C23DD6BA0003A081E /* data.json in Resources */,
 				47D0022A23DD5AF2003A081E /* Assets.xcassets in Resources */,
 				47D0022823DD5AF1003A081E /* Main.storyboard in Resources */,
+				47C5771B23DED09000F01E36 /* CommonCell.xib in Resources */,
+				47C5771723DEC64000F01E36 /* RatingDescriptionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,6 +603,7 @@
 				47D0028423DD7704003A081E /* Job.swift in Sources */,
 				4746089C23DE897C00320E5D /* PieChartItemDetail.swift in Sources */,
 				47D0025823DD65B9003A081E /* DataManager.swift in Sources */,
+				47C5771623DEC64000F01E36 /* RatingDescriptionCell.swift in Sources */,
 				47D0028023DD73DC003A081E /* DataModel.swift in Sources */,
 				47D0028823DD7A3A003A081E /* AnalyticalRating.swift in Sources */,
 				47D0022123DD5AF1003A081E /* AppDelegate.swift in Sources */,
@@ -580,6 +613,7 @@
 				474608A923DE913A00320E5D /* JSONParameterEncoder.swift in Sources */,
 				474608B723DE917900320E5D /* NetworkManager.swift in Sources */,
 				47D0027C23DD6FBC003A081E /* RatingsResponse.swift in Sources */,
+				47C5771A23DED09000F01E36 /* CommonCell.swift in Sources */,
 				474608A823DE913A00320E5D /* URLParameterEncoding.swift in Sources */,
 				47D0022323DD5AF1003A081E /* SceneDelegate.swift in Sources */,
 				474608B423DE915000320E5D /* NetworkLogger.swift in Sources */,
@@ -587,8 +621,10 @@
 				474608AA23DE913A00320E5D /* ParameterEncoding.swift in Sources */,
 				47D0028623DD77B9003A081E /* JobItem.swift in Sources */,
 				47D0027E23DD7203003A081E /* ResponseModel.swift in Sources */,
+				47C5771D23DED2F700F01E36 /* UITableViewCell+Extension.swift in Sources */,
 				47D0028A23DD7B30003A081E /* AnalyticalRatingItem.swift in Sources */,
 				4746089E23DE8A6900320E5D /* PieChartItems.swift in Sources */,
+				47C5771223DEC51000F01E36 /* HeaderCell.swift in Sources */,
 				47D0029523DD8065003A081E /* ChartItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
