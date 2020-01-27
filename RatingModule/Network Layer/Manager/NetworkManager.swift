@@ -17,32 +17,38 @@ struct NetworkManager {
     let router = Router<RatingApi>()
     
     func getRatings(query: String, completion: @escaping (_ response: RatingsResponse?,_ error: String?)->()) {
-        router.request(.details(query: query)) { data, response, error in
-            
-            if error != nil {
-                completion(nil, "Please check your network connection.")
+        if AppConstant.MockData.isEnable {
+           if let response: RatingsResponse = RatingsResponse.getObjectFromJSONFile(fileName: AppConstant.Copy.jsonFileName, forKey: nil, fileType: AppConstant.Copy.fileType) {
+                completion(response,nil)
             }
-            
-            if let response = response as? HTTPURLResponse {
-                let result = self.handleNetworkResponse(response)
-                switch result {
-                case .success:
-                    guard let responseData = data else {
-                        completion(nil, NetworkResponse.noData.rawValue)
-                        return
+        } else {
+            router.request(.details(query: query)) { data, response, error in
+                
+                if error != nil {
+                    completion(nil, "Please check your network connection.")
+                }
+                
+                if let response = response as? HTTPURLResponse {
+                    let result = self.handleNetworkResponse(response)
+                    switch result {
+                    case .success:
+                        guard let responseData = data else {
+                            completion(nil, NetworkResponse.noData.rawValue)
+                            return
+                        }
+                        do {
+                            print(responseData)
+                            let jsonData = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers)
+                            print(jsonData)
+                            let apiResponse = try JSONDecoder().decode(RatingsResponse.self, from: responseData)
+                            completion(apiResponse,nil)
+                        }catch {
+                            print(error)
+                            completion(nil, NetworkResponse.unableToDecode.rawValue)
+                        }
+                    case .failure(let networkFailureError):
+                        completion(nil, networkFailureError)
                     }
-                    do {
-                        print(responseData)
-                        let jsonData = try JSONSerialization.jsonObject(with: responseData, options: .mutableContainers)
-                        print(jsonData)
-                        let apiResponse = try JSONDecoder().decode(RatingsResponse.self, from: responseData)
-                        completion(apiResponse,nil)
-                    }catch {
-                        print(error)
-                        completion(nil, NetworkResponse.unableToDecode.rawValue)
-                    }
-                case .failure(let networkFailureError):
-                    completion(nil, networkFailureError)
                 }
             }
         }
