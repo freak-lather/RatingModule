@@ -16,6 +16,11 @@ struct ResponseModel: MockResponseCodable {
         case data = "data"
     }
     
+    init(message: String = "", data: DataModel? = nil) {
+        self.message = message
+        self.data = data
+    }
+    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         message = try values.decodeIfPresent(String.self, forKey: .message)

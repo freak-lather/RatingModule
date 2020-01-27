@@ -15,10 +15,13 @@ struct RatingsResponse: MockResponseCodable {
         case httpStatus = "httpStatus"
         case response = "response"
     }
-    
+    init(httpStatus: Int = 0, response: ResponseModel? = nil) {
+        self.httpStatus = httpStatus
+        self.response = response
+    }
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         httpStatus = try values.decodeIfPresent(Int.self, forKey: .httpStatus)
-        response = try values.decodeIfPresent(ResponseModel?.self, forKey: .response)
+        response = try values.decodeIfPresent(ResponseModel.self, forKey: .response)
     }
 }

@@ -7,3 +7,16 @@
 //
 
 import Foundation
+protocol RatingsRepositoryProtocol {
+    func getRatingsDetails(_ handler:@escaping (_ response: RatingsResponse?, _ message: String?)->Void)-> Void
+}
+
+struct RatingsRepository: RatingsRepositoryProtocol {
+    func getRatingsDetails(_ handler:@escaping (_ response: RatingsResponse?, _ message: String?)->Void) -> Void {
+        if let response = DataManager.sharedInstance.getRatingsDetails() {
+            handler(response, AppConstant.ResponseMessage.getSuccess)
+        } else {
+            handler(nil, AppConstant.ResponseMessage.failureNoRecordsFound)
+        }
+    }
+}

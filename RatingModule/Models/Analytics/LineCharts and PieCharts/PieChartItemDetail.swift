@@ -1,15 +1,15 @@
 //
-//  Value.swift
+//  PieChartItem.swift
 //  RatingModule
 //
-//  Created by ajay lather on 26/01/20.
+//  Created by ajay lather on 27/01/20.
 //  Copyright © 2020 Ajay Lather. All rights reserved.
 //
 
 import Foundation
-struct Value: MockResponseCodable {
+struct PieChartsItemDetail: MockResponseCodable {
     var key: String?
-    var value: Int?
+    var value: Double?
     
     enum CodingKeys: String, CodingKey {
         case key = "key"
@@ -19,6 +19,6 @@ struct Value: MockResponseCodable {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         key = try values.decodeIfPresent(String.self, forKey: .key)
-        value = try values.decodeIfPresent(Int.self, forKey: .value)
+        value = try values.decodeIfPresent(Double.self, forKey: .value)
     }
 }
