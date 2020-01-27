@@ -1,5 +1,5 @@
 //
-//  DataModel.swift
+//  Value.swift
 //  RatingModule
 //
 //  Created by ajay lather on 26/01/20.
@@ -7,17 +7,18 @@
 //
 
 import Foundation
-struct DataModel: MockResponseCodable {
-    var analytics: AnalyticsModel?
+struct Value: MockResponseCodable {
+    var key: String?
+    var value: Double?
     
     enum CodingKeys: String, CodingKey {
-        case analytics = "analytics"
+        case key = "key"
+        case value = "value"
     }
-    init(analytics: AnalyticsModel? = nil) {
-        self.analytics = analytics
-    }
+    
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
-        analytics = try values.decodeIfPresent(AnalyticsModel.self, forKey: .analytics)
+        key = try values.decodeIfPresent(String.self, forKey: .key)
+        value = try values.decodeIfPresent(Double.self, forKey: .value)
     }
 }

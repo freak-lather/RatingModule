@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4746089C23DE897C00320E5D /* PieChartItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4746089B23DE897C00320E5D /* PieChartItemDetail.swift */; };
+		4746089E23DE8A6900320E5D /* PieChartItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4746089D23DE8A6900320E5D /* PieChartItems.swift */; };
 		47D0022123DD5AF1003A081E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0022023DD5AF1003A081E /* AppDelegate.swift */; };
 		47D0022323DD5AF1003A081E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0022223DD5AF1003A081E /* SceneDelegate.swift */; };
 		47D0022523DD5AF1003A081E /* RatingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0022423DD5AF1003A081E /* RatingsViewController.swift */; };
@@ -20,7 +22,7 @@
 		47D0025B23DD6615003A081E /* MockResponseCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0025A23DD6615003A081E /* MockResponseCodable.swift */; };
 		47D0025D23DD6635003A081E /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0025C23DD6635003A081E /* AppConstant.swift */; };
 		47D0026C23DD6BA0003A081E /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 47D0026B23DD6BA0003A081E /* data.json */; };
-		47D0027023DD6E64003A081E /* RatingsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0026F23DD6E64003A081E /* RatingsDetails.swift */; };
+		47D0027023DD6E64003A081E /* DisplayRatingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0026F23DD6E64003A081E /* DisplayRatingDetail.swift */; };
 		47D0027A23DD6F68003A081E /* RatingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0027923DD6F68003A081E /* RatingsViewModel.swift */; };
 		47D0027C23DD6FBC003A081E /* RatingsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0027B23DD6FBC003A081E /* RatingsResponse.swift */; };
 		47D0027E23DD7203003A081E /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0027D23DD7203003A081E /* ResponseModel.swift */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4746089B23DE897C00320E5D /* PieChartItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartItemDetail.swift; sourceTree = "<group>"; };
+		4746089D23DE8A6900320E5D /* PieChartItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartItems.swift; sourceTree = "<group>"; };
 		47D0021D23DD5AF0003A081E /* RatingModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RatingModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D0022023DD5AF1003A081E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47D0022223DD5AF1003A081E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,7 +76,7 @@
 		47D0025A23DD6615003A081E /* MockResponseCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponseCodable.swift; sourceTree = "<group>"; };
 		47D0025C23DD6635003A081E /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		47D0026B23DD6BA0003A081E /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
-		47D0026F23DD6E64003A081E /* RatingsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsDetails.swift; sourceTree = "<group>"; };
+		47D0026F23DD6E64003A081E /* DisplayRatingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayRatingDetail.swift; sourceTree = "<group>"; };
 		47D0027923DD6F68003A081E /* RatingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsViewModel.swift; sourceTree = "<group>"; };
 		47D0027B23DD6FBC003A081E /* RatingsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsResponse.swift; sourceTree = "<group>"; };
 		47D0027D23DD7203003A081E /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
@@ -143,6 +147,7 @@
 				47D0027223DD6E8C003A081E /* ViewModels */,
 				47D0027323DD6EAD003A081E /* Views */,
 				47D0025E23DD6651003A081E /* Resources */,
+				47D0022E23DD5AF2003A081E /* Info.plist */,
 			);
 			path = RatingModule;
 			sourceTree = "<group>";
@@ -226,7 +231,6 @@
 			children = (
 				47D0026D23DD6DD9003A081E /* Assets */,
 				47D0026B23DD6BA0003A081E /* data.json */,
-				47D0022E23DD5AF2003A081E /* Info.plist */,
 				47D0022B23DD5AF2003A081E /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
@@ -243,7 +247,7 @@
 		47D0026E23DD6E34003A081E /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
-				47D0026F23DD6E64003A081E /* RatingsDetails.swift */,
+				47D0026F23DD6E64003A081E /* DisplayRatingDetail.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -316,7 +320,7 @@
 			children = (
 				47D0028123DD73EE003A081E /* AnalyticsModel.swift */,
 				47D0028C23DD7DD4003A081E /* Job & Service */,
-				47D0028E23DD7E2A003A081E /* LineCharts And PieChart */,
+				47D0028E23DD7E2A003A081E /* LineCharts and PieCharts */,
 				47D0028D23DD7E05003A081E /* Rating */,
 			);
 			path = Analytics;
@@ -340,14 +344,16 @@
 			path = Rating;
 			sourceTree = "<group>";
 		};
-		47D0028E23DD7E2A003A081E /* LineCharts And PieChart */ = {
+		47D0028E23DD7E2A003A081E /* LineCharts and PieCharts */ = {
 			isa = PBXGroup;
 			children = (
 				47D0029023DD7EC5003A081E /* ChartsItemDetail.swift */,
 				47D0029223DD7F3F003A081E /* Value.swift */,
 				47D0029423DD8065003A081E /* ChartItems.swift */,
+				4746089D23DE8A6900320E5D /* PieChartItems.swift */,
+				4746089B23DE897C00320E5D /* PieChartItemDetail.swift */,
 			);
-			path = "LineCharts And PieChart";
+			path = "LineCharts and PieCharts";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -489,11 +495,12 @@
 				47D0025D23DD6635003A081E /* AppConstant.swift in Sources */,
 				47D0027A23DD6F68003A081E /* RatingsViewModel.swift in Sources */,
 				47D0028423DD7704003A081E /* Job.swift in Sources */,
+				4746089C23DE897C00320E5D /* PieChartItemDetail.swift in Sources */,
 				47D0025823DD65B9003A081E /* DataManager.swift in Sources */,
 				47D0028023DD73DC003A081E /* DataModel.swift in Sources */,
 				47D0028823DD7A3A003A081E /* AnalyticalRating.swift in Sources */,
 				47D0022123DD5AF1003A081E /* AppDelegate.swift in Sources */,
-				47D0027023DD6E64003A081E /* RatingsDetails.swift in Sources */,
+				47D0027023DD6E64003A081E /* DisplayRatingDetail.swift in Sources */,
 				47D0025623DD6576003A081E /* RatingRespository.swift in Sources */,
 				47D0027C23DD6FBC003A081E /* RatingsResponse.swift in Sources */,
 				47D0022323DD5AF1003A081E /* SceneDelegate.swift in Sources */,
@@ -501,6 +508,7 @@
 				47D0028623DD77B9003A081E /* JobItem.swift in Sources */,
 				47D0027E23DD7203003A081E /* ResponseModel.swift in Sources */,
 				47D0028A23DD7B30003A081E /* AnalyticalRatingItem.swift in Sources */,
+				4746089E23DE8A6900320E5D /* PieChartItems.swift in Sources */,
 				47D0029523DD8065003A081E /* ChartItems.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

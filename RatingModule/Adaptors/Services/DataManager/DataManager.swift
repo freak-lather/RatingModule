@@ -7,3 +7,9 @@
 //
 
 import Foundation
+class DataManager {
+    static let sharedInstance = DataManager()
+    func getRatingsDetails()-> RatingsResponse? {
+        return RatingsResponse.getObjectFromJSONFile(fileName: AppConstant.Copy.jsonFileName, forKey: nil, fileType: AppConstant.Copy.fileType)
+    }
+}
