@@ -39,7 +39,6 @@
 		47D0023823DD5AF3003A081E /* RatingModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0023723DD5AF3003A081E /* RatingModuleTests.swift */; };
 		47D0024323DD5AF3003A081E /* RatingModuleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0024223DD5AF3003A081E /* RatingModuleUITests.swift */; };
 		47D0025623DD6576003A081E /* RatingRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0025523DD6576003A081E /* RatingRespository.swift */; };
-		47D0025823DD65B9003A081E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0025723DD65B9003A081E /* DataManager.swift */; };
 		47D0025B23DD6615003A081E /* MockResponseCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0025A23DD6615003A081E /* MockResponseCodable.swift */; };
 		47D0025D23DD6635003A081E /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D0025C23DD6635003A081E /* AppConstant.swift */; };
 		47D0026C23DD6BA0003A081E /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 47D0026B23DD6BA0003A081E /* data.json */; };
@@ -114,7 +113,6 @@
 		47D0024223DD5AF3003A081E /* RatingModuleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingModuleUITests.swift; sourceTree = "<group>"; };
 		47D0024423DD5AF3003A081E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47D0025523DD6576003A081E /* RatingRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingRespository.swift; sourceTree = "<group>"; };
-		47D0025723DD65B9003A081E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		47D0025A23DD6615003A081E /* MockResponseCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponseCodable.swift; sourceTree = "<group>"; };
 		47D0025C23DD6635003A081E /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		47D0026B23DD6BA0003A081E /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 				474608A023DE906900320E5D /* EndPoint */,
 				474608A323DE909B00320E5D /* Encoding */,
 				474608A423DE90B100320E5D /* Service */,
-				474608B523DE915A00320E5D /* Manager */,
 			);
 			path = "Network Layer";
 			sourceTree = "<group>";
@@ -197,14 +194,6 @@
 				474608AB23DE914F00320E5D /* Router.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		474608B523DE915A00320E5D /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				474608B623DE917900320E5D /* NetworkManager.swift */,
-			);
-			path = Manager;
 			sourceTree = "<group>";
 		};
 		47C5770F23DEC4E000F01E36 /* Cells */ = {
@@ -326,7 +315,7 @@
 		47D0025923DD65CB003A081E /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
-				47D0025723DD65B9003A081E /* DataManager.swift */,
+				474608B623DE917900320E5D /* NetworkManager.swift */,
 				47D0025A23DD6615003A081E /* MockResponseCodable.swift */,
 			);
 			path = DataManager;
@@ -614,7 +603,6 @@
 				47D0027A23DD6F68003A081E /* RatingsViewModel.swift in Sources */,
 				47D0028423DD7704003A081E /* Job.swift in Sources */,
 				4746089C23DE897C00320E5D /* PieChartItemDetail.swift in Sources */,
-				47D0025823DD65B9003A081E /* DataManager.swift in Sources */,
 				47C5771623DEC64000F01E36 /* RatingDescriptionCell.swift in Sources */,
 				47D0028023DD73DC003A081E /* DataModel.swift in Sources */,
 				47D0028823DD7A3A003A081E /* AnalyticalRating.swift in Sources */,
