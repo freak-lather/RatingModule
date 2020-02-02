@@ -162,7 +162,6 @@
 				474608A023DE906900320E5D /* EndPoint */,
 				474608A323DE909B00320E5D /* Encoding */,
 				474608A423DE90B100320E5D /* Service */,
-				474608B523DE915A00320E5D /* Manager */,
 			);
 			path = "Network Layer";
 			sourceTree = "<group>";
@@ -195,14 +194,6 @@
 				474608AB23DE914F00320E5D /* Router.swift */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		474608B523DE915A00320E5D /* Manager */ = {
-			isa = PBXGroup;
-			children = (
-				474608B623DE917900320E5D /* NetworkManager.swift */,
-			);
-			path = Manager;
 			sourceTree = "<group>";
 		};
 		47C5770F23DEC4E000F01E36 /* Cells */ = {
@@ -324,6 +315,7 @@
 		47D0025923DD65CB003A081E /* DataManager */ = {
 			isa = PBXGroup;
 			children = (
+				474608B623DE917900320E5D /* NetworkManager.swift */,
 				47D0025A23DD6615003A081E /* MockResponseCodable.swift */,
 			);
 			path = DataManager;
