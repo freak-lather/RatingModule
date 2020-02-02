@@ -18,9 +18,10 @@ struct NetworkManager {
     
     func getRatings(query: String, completion: @escaping (_ response: RatingsResponse?,_ error: String?)->()) {
         if AppConstant.MockData.isEnable {
-           if let response: RatingsResponse = RatingsResponse.getObjectFromJSONFile(fileName: AppConstant.Copy.jsonFileName, forKey: nil, fileType: AppConstant.Copy.fileType) {
+            if let response: RatingsResponse = RatingsResponse.getObjectFromJSONFile(fileName: AppConstant.Copy.jsonFileName, forKey: nil, fileType: AppConstant.Copy.fileType) {
                 completion(response,nil)
             }
+            completion(nil, NetworkResponse.noData.rawValue)
         } else {
             router.request(.details(query: query)) { data, response, error in
                 
